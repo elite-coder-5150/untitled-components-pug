@@ -1,0 +1,33 @@
+@function px-to-rems($px) {
+    @return calc($px / 16) * 1rem;
+}
+
+@mixin flex() {
+    display: flex;
+}
+
+@mixin flex-center() {
+    @include flex();
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-direction($direction) {
+    flex-direction: $direction;
+}
+
+@mixin grid($col, $gap) {
+    $grid-columns: $col;
+    $grid-gap: $gap;
+
+    @for $i from 1 through $grid-columns {
+        .col-#{$i} {
+            flex-basis: calc((100% - #{$grid-gap} * (#{$grid-columns} - 1)) / #{$grid-columns});
+            margin-right: $grid-gap;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -1,84 +1,12 @@
-.grid .col-1 {
-  flex-basis: calc((100% - 20px * (12 - 1)) / 12);
-  margin-right: 20px;
+.dropdown .dropdown-header {
+  display: flex;
+  padding: 12px 16px;
 }
-.grid .col-1:last-child {
-  margin-right: 0;
+.dropdown .dropdown-header .info .name {
+  color: #491c96;
+  font-size: 0.875rem;
 }
-.grid .col-2 {
-  flex-basis: calc((100% - 20px * (12 - 1)) / 12);
-  margin-right: 20px;
-}
-.grid .col-2:last-child {
-  margin-right: 0;
-}
-.grid .col-3 {
-  flex-basis: calc((100% - 20px * (12 - 1)) / 12);
-  margin-right: 20px;
-}
-.grid .col-3:last-child {
-  margin-right: 0;
-}
-.grid .col-4 {
-  flex-basis: calc((100% - 20px * (12 - 1)) / 12);
-  margin-right: 20px;
-}
-.grid .col-4:last-child {
-  margin-right: 0;
-}
-.grid .col-5 {
-  flex-basis: calc((100% - 20px * (12 - 1)) / 12);
-  margin-right: 20px;
-}
-.grid .col-5:last-child {
-  margin-right: 0;
-}
-.grid .col-6 {
-  flex-basis: calc((100% - 20px * (12 - 1)) / 12);
-  margin-right: 20px;
-}
-.grid .col-6:last-child {
-  margin-right: 0;
-}
-.grid .col-7 {
-  flex-basis: calc((100% - 20px * (12 - 1)) / 12);
-  margin-right: 20px;
-}
-.grid .col-7:last-child {
-  margin-right: 0;
-}
-.grid .col-8 {
-  flex-basis: calc((100% - 20px * (12 - 1)) / 12);
-  margin-right: 20px;
-}
-.grid .col-8:last-child {
-  margin-right: 0;
-}
-.grid .col-9 {
-  flex-basis: calc((100% - 20px * (12 - 1)) / 12);
-  margin-right: 20px;
-}
-.grid .col-9:last-child {
-  margin-right: 0;
-}
-.grid .col-10 {
-  flex-basis: calc((100% - 20px * (12 - 1)) / 12);
-  margin-right: 20px;
-}
-.grid .col-10:last-child {
-  margin-right: 0;
-}
-.grid .col-11 {
-  flex-basis: calc((100% - 20px * (12 - 1)) / 12);
-  margin-right: 20px;
-}
-.grid .col-11:last-child {
-  margin-right: 0;
-}
-.grid .col-12 {
-  flex-basis: calc((100% - 20px * (12 - 1)) / 12);
-  margin-right: 20px;
-}
-.grid .col-12:last-child {
-  margin-right: 0;
+.dropdown .dropdown-header .info .email {
+  color: #7C8A97;
+  font-size: 0.875rem;
 }

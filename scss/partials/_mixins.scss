@@ -16,18 +16,26 @@
     flex-direction: $direction;
 }
 
-@mixin grid($col, $gap) {
-    $grid-columns: $col;
-    $grid-gap: $gap;
+@mixin font-color($color) {
+    color: $color;
+}
 
-    @for $i from 1 through $grid-columns {
-        .col-#{$i} {
-            flex-basis: calc((100% - #{$grid-gap} * (#{$grid-columns} - 1)) / #{$grid-columns});
-            margin-right: $grid-gap;
+@mixin font-size($size) {
+    font-size: px-to-rems($size);
+}
 
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
+@mixin font-weight($weight) {
+    font-weight: $weight;
+}
+
+@mixin v-padding($size) {
+    padding: px-to-rems($size) 0;
+}
+
+@mixin h-padding($size) {
+    padding: 0 px-to-rems($size);
+}
+
+@mixin padding($size) {
+    padding: px-to-rems($size);
 }

@@ -39,3 +39,9 @@
 @mixin padding($size) {
     padding: px-to-rems($size);
 }
+
+@mixin icon($path, $dir, $name, $w, $h) {
+    background: url("#{$path}/${$dir}/#{$name}.svg") no-repeat;
+    width: px-to-rems($w);
+    height: px-to-rems($h);
+}
